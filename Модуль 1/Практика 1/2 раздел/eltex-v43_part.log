@@ -1,0 +1,268 @@
+Script started on 2026-07-07 18:01:01+07:00 [TERM="screen.xterm-256color" TTY="/dev/pts/131" COLUMNS="94" LINES="50"]
+eltex-v43@eltex-2026-summer:~$ compgen -c ls | sort -ucompgen -c ls | sort -u.
+ls
+lsattr
+lsblk
+lsb_release
+lscpu
+lsfd
+lsinitramfs
+lsipc
+lsirq
+lslocks
+lslogins
+lsmem
+lsmod
+lsns
+lsof
+lspci
+lsusb
+eltex-v43@eltex-2026-summer:~$ compgen -v HIST | sortcompgen -v HIST | sort
+HISTCMD
+HISTCONTROL
+HISTFILE
+HISTFILESIZE
+HISTSIZE
+eltex-v43@eltex-2026-summer:~$ echo "$HISTFILESIZE"echo "$HISTFILESIZE"
+2000
+eltex-v43@eltex-2026-summer:~$ find "$HOME" -maxdepth 1 -name '.*' -printf '%f\n' | sortfind "$HOME" -maxdepth 1 -name '.*' -printf '%f\n' | sort
+.bash_history
+.bash_logout
+.bashrc
+.config
+.lesshst
+.profile
+.viminfo
+eltex-v43@eltex-2026-summer:~$ export HISTTIMEFORMAT='%F %T 'export HISTTIMEFORMAT='%F %T '
+eltex-v43@eltex-2026-summer:~$ history | tailhistory | tail
+   19  2026-07-07 18:01:01 screen -r report
+   20  2026-07-07 18:01:01 screen -S "\"whoami _part2"
+   21  2026-07-07 18:01:01 echo "export LANG=ru_RU.UTF8" >>~/.bashrc
+   22  2026-07-07 18:01:01 logout
+   23  2026-07-07 18:14:39 compgen -c ls | sort -u
+   24  2026-07-07 18:15:12 compgen -v HIST | sort
+   25  2026-07-07 18:15:51 echo "$HISTFILESIZE"
+   26  2026-07-07 18:17:09 find "$HOME" -maxdepth 1 -name '.*' -printf '%f\n' | sort
+   27  2026-07-07 18:18:37 export HISTTIMEFORMAT='%F %T '
+   28  2026-07-07 18:18:59 history | tail
+eltex-v43@eltex-2026-summer:~$ datedate
+Вт 07 июл 2026 18:19:31 +07
+eltex-v43@eltex-2026-summer:~$ history | tailhistory | tail
+   21  2026-07-07 18:01:01 echo "export LANG=ru_RU.UTF8" >>~/.bashrc
+   22  2026-07-07 18:01:01 logout
+   23  2026-07-07 18:14:39 compgen -c ls | sort -u
+   24  2026-07-07 18:15:12 compgen -v HIST | sort
+   25  2026-07-07 18:15:51 echo "$HISTFILESIZE"
+   26  2026-07-07 18:17:09 find "$HOME" -maxdepth 1 -name '.*' -printf '%f\n' | sort
+   27  2026-07-07 18:18:37 export HISTTIMEFORMAT='%F %T '
+   28  2026-07-07 18:18:59 history | tail
+   29  2026-07-07 18:19:31 date
+   30  2026-07-07 18:19:52 history | tail
+eltex-v43@eltex-2026-summer:~$ tail "$HISTFILE"tail "$HISTFILE"
+cat report_part1.txt 
+screen -ls
+screen -ls
+screen -ls
+screen -dmS report vi report_part1.txt
+screen -ls
+screen -r report
+screen -S "\"whoami _part2"
+echo "export LANG=ru_RU.UTF8" >>~/.bashrc
+logout
+eltex-v43@eltex-2026-summer:~$ export PROMPT_COMMAND='history -a'export PROMPT_COMMAND='history -a'
+eltex-v43@eltex-2026-summer:~$ whoamiwhoami
+eltex-v43
+eltex-v43@eltex-2026-summer:~$ history | tailhistory | tail
+   25  2026-07-07 18:15:51 echo "$HISTFILESIZE"
+   26  2026-07-07 18:17:09 find "$HOME" -maxdepth 1 -name '.*' -printf '%f\n' | sort
+   27  2026-07-07 18:18:37 export HISTTIMEFORMAT='%F %T '
+   28  2026-07-07 18:18:59 history | tail
+   29  2026-07-07 18:19:31 date
+   30  2026-07-07 18:19:52 history | tail
+   31  2026-07-07 18:20:22 tail "$HISTFILE"
+   32  2026-07-07 18:22:27 export PROMPT_COMMAND='history -a'
+   33  2026-07-07 18:22:39 whoami
+   34  2026-07-07 18:22:46 history | tail
+eltex-v43@eltex-2026-summer:~$ tail "$HISTFILE"tail "$HISTFILE"
+#1783423192
+history | tail
+#1783423222
+tail "$HISTFILE"
+#1783423347
+export PROMPT_COMMAND='history -a'
+#1783423359
+whoami
+#1783423366
+history | tail
+eltex-v43@eltex-2026-summer:~$ вфеуDATE =$(date +%F)
+eltex-v43@eltex-2026-summer:~$ echp p 
+bash: echp: command not found
+eltex-v43@eltex-2026-summer:~$ echp o  "%DARETE"
+%DATE
+eltex-v43@eltex-2026-summer:~$ echo "%DATE"p o "%DATE"echp DATE=$(date +%F)tail "$HISTFILE"DATE=$(date +%F) | ^[[200~echo "%DATE"
+bash: $'\E[200~echo': command not found
+eltex-v43@eltex-2026-summer:~$ ~DATE=$(date +%F) | ^[[200~echo "%DATE"echp DATE=$(date +%F)echp echp DATE=$(date +%F)tail "$HISTFILE"history | tailwhoamihistory | tailDATE=$(date +%F)echp DATE=$(date +%F) | ^[[200~echo "%DATE" 
+%DATE
+eltex-v43@eltex-2026-summer:~$ DATE=$(date +%F) | echo "%DATE"^[[200~echp DATE=$(date +%F)history | tailexport PROMPT_COMMAND='history -a'tail "$HISTFILE"history | tailtail "$HISTFILE"export PROMPT_COMMAND='history -a'history | tailDATE=$(date +%F)echp DATE=$(date +%F) | ^[[200~echo "%DATE"усрзechpo "$DATE"
+2026-07-07
+eltex-v43@eltex-2026-summer:~$ TIME=$(date +%T) | echppo "$TIME"
+
+eltex-v43@eltex-2026-summer:~$ TIME=$(date +%T) | echo "$TIME"&&
+[1] 2522179
+
+eltex-v43@eltex-2026-summer:~$ TIME=$(date +%T) & echo "$TIME"
+
+[1]+  Done                    TIME=$(date +%T)
+eltex-v43@eltex-2026-summer:~$ echo "$TIME"TIME=$(date +%T) & |
+eltex-v43@eltex-2026-summer:~$ TIME=$(date +%T)echo "$TIME"
+19:01:58
+eltex-v43@eltex-2026-summer:~$ DATE_TIME="$dateDATE $TIME"
+eltex-v43@eltex-2026-summer:~$ ECHecho "$DATeE_tTIME"
+2026-07-07 19:01:58
+eltex-v43@eltex-2026-summer:~$ find -L /bin /sbin -maxdepth 1 -type f -name "'*[0-9]*', -orinprintf  '%p/\n' 2>/dev/nu;ll | sort
+/bin/addr2line
+/bin/b2sum
+/bin/base32
+/bin/base64
+/bin/bunzip2
+/bin/bzip2
+/bin/bzip2recover
+/bin/c89
+/bin/c89-gcc
+/bin/c99
+/bin/c99-gcc
+/bin/cpan5.36-x86_64-linux-gnu
+/bin/cpp-12
+/bin/diff3
+/bin/enc2xs
+/bin/gcc-12
+/bin/gcc-ar-12
+/bin/gcc-nm-12
+/bin/gcc-ranlib-12
+/bin/gcov-12
+/bin/gcov-dump-12
+/bin/gcov-tool-12
+/bin/grub-menulst2cfg
+/bin/grub-mkpasswd-pbkdf2
+/bin/grub-syslinux2cfg
+/bin/h2ph
+/bin/h2xs
+/bin/i386
+/bin/linux32
+/bin/linux64
+/bin/lto-dump-12
+/bin/md5sum
+/bin/md5sum.textutils
+/bin/pdb3
+/bin/pdb3.11
+/bin/perl5.36.0
+/bin/perl5.36-x86_64-linux-gnu
+/bin/ping4
+/bin/ping6
+/bin/pl2pm
+/bin/pod2html
+/bin/pod2man
+/bin/pod2text
+/bin/pod2usage
+/bin/py3clean
+/bin/py3compile
+/bin/py3versions
+/bin/pydoc3
+/bin/pydoc3.11
+/bin/pygettext3
+/bin/pygettext3.11
+/bin/python3
+/bin/python3.11
+/bin/sha1sum
+/bin/sha224sum
+/bin/sha256sum
+/bin/sha384sum
+/bin/sha512sum
+/bin/ssh-argv0
+/bin/systemd-id128
+/bin/traceroute6
+/bin/traceroute6.db
+/bin/x86_64
+/bin/x86_64-linux-gnu-addr2line
+/bin/x86_64-linux-gnu-ar
+/bin/x86_64-linux-gnu-as
+/bin/x86_64-linux-gnu-c++filt
+/bin/x86_64-linux-gnu-cpp
+/bin/x86_64-linux-gnu-cpp-12
+/bin/x86_64-linux-gnu-dwp
+/bin/x86_64-linux-gnu-elfedit
+/bin/x86_64-linux-gnu-gcc
+/bin/x86_64-linux-gnu-gcc-12
+/bin/x86_64-linux-gnu-gcc-ar
+/bin/x86_64-linux-gnu-gcc-ar-12
+/bin/x86_64-linux-gnu-gcc-nm
+/bin/x86_64-linux-gnu-gcc-nm-12
+/bin/x86_64-linux-gnu-gcc-ranlib
+/bin/x86_64-linux-gnu-gcc-ranlib-12
+/bin/x86_64-linux-gnu-gcov
+/bin/x86_64-linux-gnu-gcov-12
+/bin/x86_64-linux-gnu-gcov-dump
+/bin/x86_64-linux-gnu-gcov-dump-12
+/bin/x86_64-linux-gnu-gcov-tool
+/bin/x86_64-linux-gnu-gcov-tool-12
+/bin/x86_64-linux-gnu-gold
+/bin/x86_64-linux-gnu-gp-archive
+/bin/x86_64-linux-gnu-gp-collect-app
+/bin/x86_64-linux-gnu-gp-display-html
+/bin/x86_64-linux-gnu-gp-display-src
+/bin/x86_64-linux-gnu-gp-display-text
+/bin/x86_64-linux-gnu-gprof
+/bin/x86_64-linux-gnu-gprofng
+/bin/x86_64-linux-gnu-ld
+/bin/x86_64-linux-gnu-ld.bfd
+/bin/x86_64-linux-gnu-ld.gold
+/bin/x86_64-linux-gnu-lto-dump
+/bin/x86_64-linux-gnu-lto-dump-12
+/bin/x86_64-linux-gnu-nm
+/bin/x86_64-linux-gnu-objcopy
+/bin/x86_64-linux-gnu-objdump
+/bin/x86_64-linux-gnu-ranlib
+/bin/x86_64-linux-gnu-readelf
+/bin/x86_64-linux-gnu-size
+/bin/x86_64-linux-gnu-strings
+/bin/x86_64-linux-gnu-strip
+/sbin/dumpe2fs
+/sbin/e2freefrag
+/sbin/e2fsck
+/sbin/e2image
+/sbin/e2label
+/sbin/e2mmpstatus
+/sbin/e2scrub
+/sbin/e2scrub_all
+/sbin/e2undo
+/sbin/e4crypt
+/sbin/e4defrag
+/sbin/fsck.ext2
+/sbin/fsck.ext3
+/sbin/fsck.ext4
+/sbin/killall5
+/sbin/mke2fs
+/sbin/mkfs.ext2
+/sbin/mkfs.ext3
+/sbin/mkfs.ext4
+/sbin/resize2fs
+/sbin/tune2fs
+/sbin/update-grub2
+eltex-v43@eltex-2026-summer:~$ export PS1='\u@\h-$(date) +%H:%M)c '> '
+eltex-v43@eltex-2026-summer-19:09> export PS1='\u@\h-$(date +%H:%M)> 'find -L /bin /sbin -maxdepth 1 -type f -name '*[0-9]*' -printf '%p\n' 2>/dev/null | sortecho "$DATE_TIME"
+DATE_TIME="$DATE $TIME"echo "$TIME"TIME=$(date +%T)echo "$TIME"TIME=$(date +%T) & |echo "$DATE"DATE=$(date +%F) | echo "%DATE"^[[200~echp DATE=$(date +%F)history | tailexport PROMPT_COMMAND='history -a'tail "$HISTFILE"history | taildatehistory | tailexport HISTTIMEFORMAT='%F %T 'find "$HOME" -maxdepth 1 -name '.*' -printf '%f\n' | sortexport HISTTIMEFORMAT='%F %T 'history | taildatehistory | tailtail "$HISTFILE"export PROMPT_COMMAND='history -a'history | tailDATE=$(date +%F)echp DATE=$(date +%F) | ^[[200~echo "%DATE"echo "$DATE"TIME=$(date +%T) | echo "$TIME"&TIME=$(date +%T)echo "$TIME"TIME=$(date +%T)echo "$TIME"TIME=$(date +%T) & |echo "$DATE"DATE=$(date +%F) | echo "%DATE"^[[200~echp DATE=$(date +%F)history | tailexport PROMPT_COMMAND='history -a'tail "$HISTFILE"history | taildatehistory | tailexport HISTTIMEFORMAT='%F %T 'find "$HOME" -maxdepth 1 -name '.*' -printf '%f\n' | sortecho "$HISTFILESIZE"compgen -v HIST | sortc ls | sort -ulogoutecho "export LANG=ru_RU.UTF8" >>~/.bashrcscreen -S "\"whoami _part2"r reportlsdmS report vi report_part1.txtlscat report_part1.txt screen -r reportlsdmS report vi report_part1.txtlslogoutscreen -lsS report vi report_part1.txtr toplsln -dmS top topscreen -dmS top topl -lsnr topS report vi report_part1.txtlslogoutscreen -lsdmS report vi report_part1.txtlsr reportcat report_part1.txt screen -lsexport PS!1
+eltex-v43@eltex-2026-summer-19:09> bash --norpirpprofile --norc
+eltex-v43@eltex-2026-summer-19:10> mkdir -p "$HOME"/$(date +%Y)-[{01..12}
+eltex-v43@eltex-2026-summer-19:11> ls -d "$HOME"\$(date +%Y)-*/
+/home/eltex-v43/2026-01  /home/eltex-v43/2026-05  /home/eltex-v43/2026-09
+/home/eltex-v43/2026-02  /home/eltex-v43/2026-06  /home/eltex-v43/2026-10
+/home/eltex-v43/2026-03  /home/eltex-v43/2026-07  /home/eltex-v43/2026-11
+/home/eltex-v43/2026-04  /home/eltex-v43/2026-08  /home/eltex-v43/2026-12
+eltex-v43@eltex-2026-summer-19:12> exit
+exit
+eltex-v43@eltex-2026-summer-19:13> perl =pi-pi -e 's/|\e\[[0-9;?]*[ -\/]*[@-~]//g;g; s/\r//g' "$[USE RUSER [USERUSER {USER
+}_part.log
+> perl -pi -e 's/\e\[[0-9;?]*[ -\/]*[@-~]//g; s/\r//g' "${USER}_part.log"
+> ^C
+eltex-v43@eltex-2026-summer-19:16> perl -pi -e 's/\e\[[0-9;?]*[ -\/]*[@-~]//g; s/\r//g' "${USER}_part.log 
+perl -pi -e 's/\e\[[0-9;?]*[ -\/]*[@-~]//g; s/\r//g' "${USER}_part.log""

@@ -1,0 +1,17 @@
+mkdir -p D1/D2/D3
+touch D1/D2/file.txt
+echo "Text for part 3" > D1/D2/file.txt
+ln -s ../file.txt D1/D2/D3/file_symlink.txt
+ln D1/D2/file.txt D1/D2/D3/file_hardlink.txt
+ls -li D1/D2/file.txt D1/D2/D3/file_symlink.txt D1/D2/D3/file_hardlink.txt
+mv D1/D2/file.txt D1/file.txt
+cat D1/D2/D3/file_symlink.txt
+cat D1/D2/D3/file_hardlink.txt
+rm -r D1/D2
+find / -type f -size +20M -exec du -h {} + 2>/dev/null | sort -h > "${USER}_part3_gt20M.log"
+find "$HOME" -type f -mtime -1 -print
+command -v find
+file "$(command -v find)"
+file /boot/initrd.img*
+ls -l "$LOG" "${USER}_part3_gt20M.log"
+head "${USER}_part3_gt20M.log"
