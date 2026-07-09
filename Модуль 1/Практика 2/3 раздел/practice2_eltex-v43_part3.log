@@ -1,0 +1,249 @@
+Script started on 2026-07-10 00:33:26+07:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="94" LINES="50"]
+]0;eltex-v43@eltex-2026-summer: ~eltex-v43@eltex-2026-summer:~$ ssh root@172.16.9.217ssh root@172.16.9.217
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-134-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Jul  9 05:33:55 PM UTC 2026
+
+  System load:  0.0                Processes:              114
+  Usage of /:   41.8% of 14.66GB   Users logged in:        0
+  Memory usage: 6%                 IPv4 address for ens18: 172.16.9.217
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+74 updates can be applied immediately.
+1 of these updates is a standard security update.
+To see these additional updates run: apt list --upgradable
+
+1 additional security update can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+2026-07-09 16:22:14
+Last login: Thu Jul  9 16:55:22 2026 from 172.16.8.4
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# git config --global user.name "skrudje"git config --global user.name "skrudje"
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# git config --global user.email "ТВОЙ_EMAIL_ОТ_GITHUB"git config --global user.email "ТВОЙ_EMAIL_ОТ_GITHUB"""""""""""""""""""""ы"л"к"г"в"о"""""""s"k"r"u"d"j"b"z"@"g"m"a"i"l"."c"o"m"
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# git config --global init.defaultBranch maingit config --global init.defaultBranch main
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# git config --global --listgit config --global --list
+=user.name=skrudje
+user.email=skrudjbz@gmail.com
+init.defaultbranch=main
+>]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# git --versiongit --version
+git version 2.43.0
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# gh --versiongh --version
+Command 'gh' not found, but can be installed with:
+snap install gh  # version 2.86.0-112-gc30647b78, or
+apt  install gh  # version 2.45.0-1ubuntu0.3
+See 'snap info gh' for additional versions.
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# apt updateapt update
+0% [Working]            Get:1 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+0% [Connecting to ru.archive.ubuntu.com (213.180.204.183)] [1 InRelease 2,588 B/126 kB 2%]                                                                                          Hit:2 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+                                                                                          0% [1 InRelease 28.7 kB/126 kB 23%]0% [Waiting for headers] [1 InRelease 41.7 kB/126 kB 33%]                                                         Get:3 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+0% [3 InRelease 11.8 kB/126 kB 9%] [1 InRelease 43.1 kB/126 kB 34%]                                                                   0% [3 InRelease 84.2 kB/126 kB 67%]0% [3 InRelease 84.2 kB/126 kB 67%]                                   0% [Waiting for headers]0% [Waiting for headers] [Waiting for headers]                                              Hit:4 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
+                                              0% [Waiting for headers]                        Get:5 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [827 kB]
+0% [Waiting for headers] [5 Packages 2,657 B/827 kB 0%]23% [Waiting for headers] [5 Packages 40.3 kB/827 kB 5%]                                                        Get:6 http://ru.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1,080 kB]
+24% [6 Packages 9,334 B/1,080 kB 1%] [5 Packages 103 kB/827 kB 12%]                                                                   43% [Waiting for headers] [5 Packages 355 kB/827 kB 43%]                                                        Get:7 http://ru.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [268 kB]
+                                                        Get:8 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1,660 kB]
+52% [8 Packages 332 kB/1,660 kB 20%] [5 Packages 355 kB/827 kB 43%]52% [6 Packages store 0 B] [8 Packages 335 kB/1,660 kB 20%] [5 Packages 355 kB/827 kB 43%]                                                                                          76% [6 Packages store 0 B] [5 Packages 730 kB/827 kB 88%]                                                         Get:9 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [327 kB]
+76% [6 Packages store 0 B] [9 Translation-en 9,799 B/327 kB 3%] [5 Packages 730 kB/827 kB 88%                                                                                             81% [9 Translation-en 327 kB/327 kB 100%] [5 Packages 730 kB/827 kB 88%]81% [7 Translation-en store 0 B] [9 Translation-en 327 kB/327 kB 100%] [5 Packages 730 kB/827                                                                                             81% [7 Translation-en store 0 B] [5 Packages 730 kB/827 kB 88%]                                                               82% [7 Translation-en store 0 B]                                83% [Waiting for headers]83% [8 Packages store 0 B] [Waiting for headers]                                                Get:10 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1,174 kB]
+83% [8 Packages store 0 B] [10 Packages 9,895 B/1,174 kB 1%]                                                            85% [10 Packages 172 kB/1,174 kB 15%]85% [9 Translation-en store 0 B] [10 Packages 172 kB/1,174 kB 15%]                                                                  95% [10 Packages 847 kB/1,174 kB 72%]95% [5 Packages store 0 B] [10 Packages 853 kB/1,174 kB 73%]                                                            98% [10 Packages 1,032 kB/1,174 kB 88%]                                       100% [Working]100% [10 Packages store 0 B]                            100% [Working]              Fetched 5,589 kB in 1s (4,366 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 5%Reading package lists... 6%Reading package lists... 6%Reading package lists... 45%Reading package lists... 45%Reading package lists... 63%Reading package lists... 63%Reading package lists... 63%Reading package lists... 63%Reading package lists... 64%Reading package lists... 64%Reading package lists... 67%Reading package lists... 67%Reading package lists... 69%Reading package lists... 69%Reading package lists... 73%Reading package lists... 73%Reading package lists... 75%Reading package lists... 75%Reading package lists... 81%Reading package lists... 81%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+74 packages can be upgraded. Run 'apt list --upgradable' to see them.
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# apt install -y git ghapt install -y git gh
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+git is already the newest version (1:2.43.0-1ubuntu7.3).
+git set to manually installed.
+The following NEW packages will be installed:
+  gh
+0 upgraded, 1 newly installed, 0 to remove and 74 not upgraded.
+Need to get 8,836 kB of archives.
+After this operation, 45.4 MB of additional disk space will be used.
+0% [Working]            Get:1 http://ru.archive.ubuntu.com/ubuntu noble-updates/universe amd64 gh amd64 2.45.0-1ubuntu0.3 [8,836 kB]
+0% [1 gh 4,502 B/8,836 kB 0%]49% [1 gh 5,366 kB/8,836 kB 61%]                                100% [Working]              Fetched 8,836 kB in 1s (11.1 MB/s)
+
+78Selecting previously unselected package gh.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 125689 files and directories currently installed.)
+Preparing to unpack .../gh_2.45.0-1ubuntu0.3_amd64.deb ...
+7Progress: [  0%] [........................................................................] 87Progress: [ 20%] [##############..........................................................] 8Unpacking gh (2.45.0-1ubuntu0.3) ...
+7Progress: [ 40%] [############################............................................] 8Setting up gh (2.45.0-1ubuntu0.3) ...
+7Progress: [ 60%] [###########################################.............................] 87Progress: [ 80%] [#########################################################...............] 8Processing triggers for man-db (2.12.0-4build2) ...
+
+78Scanning processes... [                                                                      ]Scanning processes... [                                                                      ]Scanning processes... [=                                                                     ]Scanning processes... [=                                                                     ]Scanning processes... [==                                                                    ]Scanning processes... [===                                                                   ]Scanning processes... [===                                                                   ]Scanning processes... [====                                                                  ]Scanning processes... [====                                                                  ]Scanning processes... [=====                                                                 ]Scanning processes... [======                                                                ]Scanning processes... [======                                                                ]Scanning processes... [=======                                                               ]Scanning processes... [=======                                                               ]Scanning processes... [========                                                              ]Scanning processes... [=========                                                             ]Scanning processes... [=========                                                             ]Scanning processes... [==========                                                            ]Scanning processes... [===========                                                           ]Scanning processes... [===========                                                           ]Scanning processes... [============                                                          ]Scanning processes... [============                                                          ]Scanning processes... [=============                                                         ]Scanning processes... [==============                                                        ]Scanning processes... [==============                                                        ]Scanning processes... [===============                                                       ]Scanning processes... [===============                                                       ]Scanning processes... [================                                                      ]Scanning processes... [=================                                                     ]Scanning processes... [=================                                                     ]Scanning processes... [==================                                                    ]Scanning processes... [===================                                                   ]Scanning processes... [===================                                                   ]Scanning processes... [====================                                                  ]Scanning processes... [====================                                                  ]Scanning processes... [=====================                                                 ]Scanning processes... [======================                                                ]Scanning processes... [======================                                                ]Scanning processes... [=======================                                               ]Scanning processes... [=======================                                               ]Scanning processes... [========================                                              ]Scanning processes... [=========================                                             ]Scanning processes... [=========================                                             ]Scanning processes... [==========================                                            ]Scanning processes... [===========================                                           ]Scanning processes... [===========================                                           ]Scanning processes... [============================                                          ]Scanning processes... [============================                                          ]Scanning processes... [=============================                                         ]Scanning processes... [==============================                                        ]Scanning processes... [==============================                                        ]Scanning processes... [===============================                                       ]Scanning processes... [===============================                                       ]Scanning processes... [================================                                      ]Scanning processes... [=================================                                     ]Scanning processes... [=================================                                     ]Scanning processes... [==================================                                    ]Scanning processes... [===================================                                   ]Scanning processes... [===================================                                   ]Scanning processes... [====================================                                  ]Scanning processes... [====================================                                  ]Scanning processes... [=====================================                                 ]Scanning processes... [======================================                                ]Scanning processes... [======================================                                ]Scanning processes... [=======================================                               ]Scanning processes... [=======================================                               ]Scanning processes... [========================================                              ]Scanning processes... [=========================================                             ]Scanning processes... [=========================================                             ]Scanning processes... [==========================================                            ]Scanning processes... [==========================================                            ]Scanning processes... [===========================================                           ]Scanning processes... [============================================                          ]Scanning processes... [============================================                          ]Scanning processes... [=============================================                         ]Scanning processes... [==============================================                        ]Scanning processes... [==============================================                        ]Scanning processes... [===============================================                       ]Scanning processes... [===============================================                       ]Scanning processes... [================================================                      ]Scanning processes... [=================================================                     ]Scanning processes... [=================================================                     ]Scanning processes... [==================================================                    ]Scanning processes... [==================================================                    ]Scanning processes... [===================================================                   ]Scanning processes... [====================================================                  ]Scanning processes... [====================================================                  ]Scanning processes... [=====================================================                 ]Scanning processes... [======================================================                ]Scanning processes... [======================================================                ]Scanning processes... [=======================================================               ]Scanning processes... [=======================================================               ]Scanning processes... [========================================================              ]Scanning processes... [=========================================================             ]Scanning processes... [=========================================================             ]Scanning processes... [==========================================================            ]Scanning processes... [==========================================================            ]Scanning processes... [===========================================================           ]Scanning processes... [============================================================          ]Scanning processes... [============================================================          ]Scanning processes... [=============================================================         ]Scanning processes... [==============================================================        ]Scanning processes... [==============================================================        ]Scanning processes... [===============================================================       ]Scanning processes... [===============================================================       ]Scanning processes... [================================================================      ]Scanning processes... [=================================================================     ]Scanning processes... [=================================================================     ]Scanning processes... [==================================================================    ]Scanning processes... [==================================================================    ]Scanning processes... [===================================================================   ]Scanning processes... [====================================================================  ]Scanning processes... [====================================================================  ]Scanning processes... [===================================================================== ]Scanning processes... [======================================================================]Scanning processes...                                                                         
+Scanning linux images... [                                                                   ]Scanning linux images... [================                                                   ]Scanning linux images... [=================================                                  ]Scanning linux images... [==================================================                 ]Scanning linux images... [===================================================================]Scanning linux images...                                                                      
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# gh --versiongh --version
+gh version 2.45.0 (2025-07-18 Ubuntu 2.45.0-1ubuntu0.3)
+https://github.com/cli/cli/releases/tag/v2.45.0
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# gh auth statusgh auth status
+You are not logged into any GitHub hosts. To log in, run: gh auth login
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# ssh-keygen -t ed25519 -f ~/.ssh/eltex-v43_github -N ""ssh-keygen -t ed25519 -f ~/.ssh/eltex-v43_github -N ""
+Generating public/private ed25519 key pair.
+Your identification has been saved in /root/.ssh/eltex-v43_github
+Your public key has been saved in /root/.ssh/eltex-v43_github.pub
+The key fingerprint is:
+SHA256:WlVAwpIYXg3orOcu12FfE+6A7UGWC0k109wex2LfH7c root@eltex-practice2-v43
+The key's randomart image is:
++--[ED25519 256]--+
+|    .+o*=+oo..   |
+|   .o.+ o+o.= o  |
+|   o.. o ..o = . |
+|    o o +.. . ..o|
+|   .   *So .    =|
+|  . . +o= +    E.|
+|   o o.+ = .     |
+|  . o . o .      |
+|   +.            |
++----[SHA256]-----+
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# gh auth logingh auth login
+78? What account do you want to log into?  [Use arrows to move, type to filter]
+> GitHub.com
+  GitHub Enterprise Server
+788? What account do you want to log into? GitHub.com
+78? What is your preferred protocol for Git operations on this host?  [Use arrows to move, type to filter]
+> HTTPS
+  SSH
+78? What is your preferred protocol for Git operations on this host?  [Use arrows to move, type to filter]
+  HTTPS
+> SSH
+788? What is your preferred protocol for Git operations on this host? SSH
+78? Upload your SSH public key to your GitHub account?  [Use arrows to move, type to filter]
+> /root/.ssh/eltex-v43_github.pub
+  Skip
+788? Upload your SSH public key to your GitHub account? /root/.ssh/eltex-v43_github.pub
+? Title for your SSH key: (GitHub CLI) 78eltex-practice2-v43? Title for your SSH key: eltex-practice2-v43
+78? How would you like to authenticate GitHub CLI?  [Use arrows to move, type to filter]
+> Login with a web browser
+788? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: CF34-804B
+Press Enter to open github.com in your browser... 
+! Failed opening a web browser at https://github.com/login/device
+  exec: "xdg-open,x-www-browser,www-browser,wslview": executable file not found in $PATH
+  Please try entering the URL in your browser manually
+✓ Authentication complete.
+- gh config set -h github.com git_protocol ssh
+✓ Configured git protocol
+! Authentication credentials saved in plain text
+✓ Uploaded the SSH key to your GitHub account: /root/.ssh/eltex-v43_github.pub
+✓ Logged in as skrudje
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# gh auth setup-git --hostname github.comgh auth setup-git --hostname github.com\
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# gh auth statusgh auth status\
+github.com
+  ✓ Logged in to github.com account skrudje (/root/.config/gh/hosts.yml)
+  - Active account: true
+  - Git operations protocol: ssh
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# gh repo view skrudje/Eltex-Practicegh repo view skrudje/Eltex-Practice
+]11;?\skrudje/Eltex-Practice
+Андронов Андрей 43 вариант, выполненные задания
+
+This repository does not have a README
+
+View this repository on GitHub: https://github.com/skrudje/Eltex-Practice
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# cd ~
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# Vgit clone git@github.com:skrudje/Eltex-Practice.gitgit clone git@github.com:skrudje/Eltex-Practice.git
+Cloning into 'Eltex-Practice'...
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# cd elcat > ~/.ssh/config <<'EOF'
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/eltex-v43_github
+    IdentitiesOnly yes
+EOF]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# cat > ~/.ssh/config <<'EOF'
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/eltex-v43_github
+    IdentitiesOnly yes
+EOF
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# chmod 600 ~/.ssh/configchmod 600 ~/.ssh/config
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# chmod 600 ~/.ssh/eltex-v43_githubchmod 600 ~/.ssh/eltex-v43_github
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# chmod 644 ~/.ssh/eltex-v43_github.pubchmod 644 ~/.ssh/eltex-v43_github.pub
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# ssh -T git@github.comssh -T git@github.com
+Hi skrudje! You've successfully authenticated, but GitHub does not provide shell access.
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# cd ~
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# git clone git@github.com:skrudje/Eltex-Practice.gitgit clone git@github.com:skrudje/Eltex-Practice.git
+Cloning into 'Eltex-Practice'...
+remote: Enumerating objects: 18, done.
+remote: Counting objects:   5% (1/18)remote: Counting objects:  11% (2/18)remote: Counting objects:  16% (3/18)remote: Counting objects:  22% (4/18)remote: Counting objects:  27% (5/18)remote: Counting objects:  33% (6/18)remote: Counting objects:  38% (7/18)remote: Counting objects:  44% (8/18)remote: Counting objects:  50% (9/18)remote: Counting objects:  55% (10/18)remote: Counting objects:  61% (11/18)remote: Counting objects:  66% (12/18)remote: Counting objects:  72% (13/18)remote: Counting objects:  77% (14/18)remote: Counting objects:  83% (15/18)remote: Counting objects:  88% (16/18)remote: Counting objects:  94% (17/18)remote: Counting objects: 100% (18/18)remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects:   6% (1/15)remote: Compressing objects:  13% (2/15)remote: Compressing objects:  20% (3/15)remote: Compressing objects:  26% (4/15)remote: Compressing objects:  33% (5/15)remote: Compressing objects:  40% (6/15)remote: Compressing objects:  46% (7/15)remote: Compressing objects:  53% (8/15)remote: Compressing objects:  60% (9/15)remote: Compressing objects:  66% (10/15)remote: Compressing objects:  73% (11/15)remote: Compressing objects:  80% (12/15)remote: Compressing objects:  86% (13/15)remote: Compressing objects:  93% (14/15)remote: Compressing objects: 100% (15/15)remote: Compressing objects: 100% (15/15), done.
+Receiving objects:   5% (1/18)Receiving objects:  11% (2/18)Receiving objects:  16% (3/18)Receiving objects:  22% (4/18)Receiving objects:  27% (5/18)Receiving objects:  33% (6/18)Receiving objects:  38% (7/18)Receiving objects:  44% (8/18), 1.45 MiB | 2.86 MiB/sReceiving objects:  50% (9/18), 1.45 MiB | 2.86 MiB/sReceiving objects:  55% (10/18), 1.45 MiB | 2.86 MiB/sReceiving objects:  61% (11/18), 1.45 MiB | 2.86 MiB/sReceiving objects:  66% (12/18), 1.45 MiB | 2.86 MiB/sReceiving objects:  72% (13/18), 1.45 MiB | 2.86 MiB/sReceiving objects:  77% (14/18), 1.45 MiB | 2.86 MiB/sReceiving objects:  83% (15/18), 1.45 MiB | 2.86 MiB/sReceiving objects:  88% (16/18), 1.45 MiB | 2.86 MiB/sReceiving objects:  94% (17/18), 1.45 MiB | 2.86 MiB/sremote: Total 18 (delta 1), reused 18 (delta 1), pack-reused 0 (from 0)
+Receiving objects: 100% (18/18), 1.45 MiB | 2.86 MiB/sReceiving objects: 100% (18/18), 4.70 MiB | 6.05 MiB/s, done.
+Resolving deltas:   0% (0/1)Resolving deltas: 100% (1/1)Resolving deltas: 100% (1/1), done.
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# cd ells
+Eltex-Practice  etc_backup.7z    etc_backup_gzip     etc_backup.tar.gz
+etc_backup      etc_backup_7zip  etc_backup.tar.bz2
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# elcd ELltex-Practice/
+]0;root@eltex-practice2-v43: ~/Eltex-Practiceroot@eltex-practice2-v43:~/Eltex-Practice# git pullll
+Already up to date.
+]0;root@eltex-practice2-v43: ~/Eltex-Practiceroot@eltex-practice2-v43:~/Eltex-Practice# Vmkdir -p "Модуль 1/Практика 2/1 раздел"mkdir -p "Модуль 1/Практика 2/1 раздел"
+]0;root@eltex-practice2-v43: ~/Eltex-Practiceroot@eltex-practice2-v43:~/Eltex-Practice# mkdir -p "Модуль 1/Практика 2/2 раздел"mkdir -p "Модуль 1/Практика 2/2 раздел"
+]0;root@eltex-practice2-v43: ~/Eltex-Practiceroot@eltex-practice2-v43:~/Eltex-Practice# mkdir -p "Модуль 1/Практика 2/3 раздел"mkdir -p "Модуль 1/Практика 2/3 раздел"
+]0;root@eltex-practice2-v43: ~/Eltex-Practiceroot@eltex-practice2-v43:~/Eltex-Practice# touch "Модуль 1/Практика 2/1 раздел/.gitkeep"touch "Модуль 1/Практика 2/1 раздел/.gitkeep"
+]0;root@eltex-practice2-v43: ~/Eltex-Practiceroot@eltex-practice2-v43:~/Eltex-Practice# touch "Модуль 1/Практика 2/2 раздел/.gitkeep"touch "Модуль 1/Практика 2/2 раздел/.gitkeep"
+]0;root@eltex-practice2-v43: ~/Eltex-Practiceroot@eltex-practice2-v43:~/Eltex-Practice# touch "Модуль 1/Практика 2/2 раздел/.gitkeep" раздел/.gitkeep"3 раздел/.gitkeep"
+]0;root@eltex-practice2-v43: ~/Eltex-Practiceroot@eltex-practice2-v43:~/Eltex-Practice# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	"\320\234\320\276\320\264\321\203\320\273\321\214 1/\320\237\321\200\320\260\320\272\321\202\320\270\320\272\320\260 2/"
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;root@eltex-practice2-v43: ~/Eltex-Practiceroot@eltex-practice2-v43:~/Eltex-Practice# itgot branch
+Command 'got' not found, but can be installed with:
+apt install got
+]0;root@eltex-practice2-v43: ~/Eltex-Practiceroot@eltex-practice2-v43:~/Eltex-Practice# git branch
+=* main
+>]0;root@eltex-practice2-v43: ~/Eltex-Practiceroot@eltex-practice2-v43:~/Eltex-Practice# git add .
+]0;root@eltex-practice2-v43: ~/Eltex-Practiceroot@eltex-practice2-v43:~/Eltex-Practice# git commit -n "m "добавилвил папки 2 парактики"
+[main 4cd6291] добавил папки 2 практики
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "\320\234\320\276\320\264\321\203\320\273\321\214 1/\320\237\321\200\320\260\320\272\321\202\320\270\320\272\320\260 2/1 \321\200\320\260\320\267\320\264\320\265\320\273/.gitkeep"
+ create mode 100644 "\320\234\320\276\320\264\321\203\320\273\321\214 1/\320\237\321\200\320\260\320\272\321\202\320\270\320\272\320\260 2/2 \321\200\320\260\320\267\320\264\320\265\320\273/.gitkeep"
+ create mode 100644 "\320\234\320\276\320\264\321\203\320\273\321\214 1/\320\237\321\200\320\260\320\272\321\202\320\270\320\272\320\260 2/3 \321\200\320\260\320\267\320\264\320\265\320\273/.gitkeep"
+]0;root@eltex-practice2-v43: ~/Eltex-Practiceroot@eltex-practice2-v43:~/Eltex-Practice# пше git push
+Enumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 508 bytes | 508.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:skrudje/Eltex-Practice.git
+   e2f4689..4cd6291  main -> main
+]0;root@eltex-practice2-v43: ~/Eltex-Practiceroot@eltex-practice2-v43:~/Eltex-Practice# cdcd ~
+]0;root@eltex-practice2-v43: ~root@eltex-practice2-v43:~# учшеexit
+logout
+Connection to 172.16.9.217 closed.
+]0;eltex-v43@eltex-2026-summer: ~eltex-v43@eltex-2026-summer:~$ exit
+exit
+
+Script done on 2026-07-10 01:51:45+07:00 [COMMAND_EXIT_CODE="0"]
