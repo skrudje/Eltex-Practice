@@ -19,7 +19,6 @@ static int open_retry(const char *path, int flags) {
     do {
         fd = open(path, flags);
     } while (fd == -1 && errno == EINTR);
-
     return fd;
 }
 

@@ -1,0 +1,11 @@
+#ifndef PROTOCOL_H
+#define PROTOCOL_H
+
+#define CHAT_MESSAGE_SIZE 512
+#define CHAT_NORMAL_PRIORITY 1U
+#define CHAT_EXIT_PRIORITY 10U
+
+#define CHAT_EXIT_TEXT "__CHAT_EXIT__"
+#define CHAT_EXIT_COMMAND "/exit"
+
+#endif
